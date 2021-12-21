@@ -1,7 +1,7 @@
 <h1 align="center">PyPhisher</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-1.4.5-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-1.5-green?style=for-the-badge">
   <img src="https://img.shields.io/github/stars/KasRoudra/pyphisher?style=for-the-badge&color=orange">
   <img src="https://img.shields.io/github/forks/KasRoudra/pyphisher?color=cyan&style=for-the-badge&color=purple">
   <img src="https://img.shields.io/github/issues/KasRoudra/pyphisher?color=red&style=for-the-badge">
@@ -51,7 +51,7 @@ wget https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/pyphisher.py && 
 ### Features:
 
  - Multi platform (Supports most linux)
- - 64 Website templates
+ - 65 Website templates
  - Dual Tunneling (Ngrok and Cloudflared)
  - Easy to use
  - Possible error diagnoser
